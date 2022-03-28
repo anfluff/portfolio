@@ -1,21 +1,29 @@
 ARG NODE_VERSION_ARG="lts"
 
-FROM node:${NODE_VERSION_ARG}-alpine AS nbuilder
-RUN apk add --update git
-WORKDIR /var/www/app/
-COPY ./package*.json /var/www/app/
+FROM node:${NODE_VERSION_ARG}-alpine AS builder
+
+ENV APP_VERSION=\$APP_VERSION
+
+WORKDIR /src
+
+# Copy just these two files and install dependencies. If these files have not
+# changed, Docker should have all dependencies cached.
+COPY package.json package-lock.json ./
 RUN npm ci
-COPY ./ /var/www/app/
-COPY ./.git /var/www/app/.git
-RUN COMMIT_SHORT_HASH=$(git rev-list --max-count=1 --abbrev-commit --skip=# HEAD) npm run build
+
+COPY . ./
+RUN npm run build
 
 FROM registry.gitlab.beauit.com/common-ci/nginx:stable AS web
 LABEL maintainer="Nikolai Apraksin <nickolayanatolievich@gmail.com>"
-RUN mkdir -p /opt/nginx-confs
-COPY ./docker/web/config/web.nginx.conf /opt/nginx-confs/default.conf.dist
-COPY ./docker/web/robots.txt /var/www/app/public/robots.txt
-COPY --from=nbuilder /var/www/app/dist /var/www/app/public
-COPY ./docker/web/docker-command.sh /bin/docker-command.sh
-RUN sed -i ':a;N;$!ba;s/\r//g' /bin/docker-command.sh \
-    && chmod +x /bin/docker-command.sh
-CMD ["/bin/docker-command.sh"]
+
+WORKDIR /var/www/app
+
+COPY --from=builder /src/dist ./public
+COPY --from=builder /src/docker/web/config/landing.nginx.conf ./
+COPY --from=builder /src/docker/web/robots.txt ./public
+
+COPY --from=builder /src/docker/web/docker-command.sh /bin/
+
+RUN sed -i ':a;N;$!ba;s/\r//g' /bin/docker-command.sh && chmod +x /bin/docker-command.sh
+CMD [ "/bin/docker-command.sh" ]

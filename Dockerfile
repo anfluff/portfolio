@@ -20,7 +20,7 @@ LABEL maintainer="Nikolai Apraksin <nickolayanatolievich@gmail.com>"
 WORKDIR /var/www/app
 
 COPY --from=builder /src/dist ./public
-COPY --from=builder /src/docker/web/config/landing.nginx.conf ./
+COPY --from=builder /src/docker/web/config/web.nginx.conf ./
 COPY --from=builder /src/docker/web/robots.txt ./public
 
 COPY --from=builder /src/docker/web/docker-command.sh /bin/

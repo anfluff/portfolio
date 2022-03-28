@@ -1,0 +1,100 @@
+variables:
+  NODE_VERSION: lts
+  IMAGE_VERSION: ${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA}-${CI_PIPELINE_ID}
+
+stages:
+  - qa
+  - build
+  - deploy:prod
+
+.check:
+  stage: qa
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/node:${NODE_VERSION}-alpine
+  allow_failure: true
+
+check:codestyle:
+  extends: .check
+  only:
+    changes:
+      - src/**/*
+      - package.json
+      - package-lock.json
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules
+  before_script:
+    - npm ci
+  script:
+    - npm run lint
+
+check:vulnerabilities:
+  extends: .check
+  script:
+    - npm audit
+
+check:docker:
+  extends: .check
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/hadolint/hadolint:latest-debian
+  only:
+    changes:
+      - Dockerfile
+  script:
+    - hadolint Dockerfile
+
+check:todo:
+  extends: .check
+  only:
+    changes:
+      - src/**/*
+      - .checode.yaml
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/mishamyrt/checode
+  script:
+    checode src/
+
+build:
+  stage: build
+  allow_failure: false
+  before_script:
+    - echo -n ${CI_REGISTRY_PASSWORD} | docker login -u ${CI_REGISTRY_USER} --password-stdin ${CI_REGISTRY}
+    - source .env.dist
+  script:
+    - docker build
+        --build-arg CI_REGISTRY_ARG=${CI_REGISTRY}
+        --build-arg NODE_VERSION_ARG=${NODE_VERSION}
+        -t ${CI_REGISTRY_IMAGE}/web:${CI_COMMIT_REF_SLUG}
+        -t ${CI_REGISTRY_IMAGE}/web:${IMAGE_VERSION}
+        .
+
+    - docker push ${CI_REGISTRY_IMAGE}/web:${CI_COMMIT_REF_SLUG}
+    - docker push ${CI_REGISTRY_IMAGE}/web:${IMAGE_VERSION}
+
+.deploy:
+  when: manual
+  tags:
+    - deployment
+  script:
+    - >
+      ansible-playbook ansible-playbook.yml
+      -e DEPLOY_HOST="\"$DEPLOY_HOST\""
+      -e SERVICE_NAME_POSTFIX="\"$SERVICE_NAME_POSTFIX\""
+      -e IMAGE_VERSION="\"$IMAGE_VERSION\""
+      -e CI_REGISTRY="\"$CI_REGISTRY\""
+      -e CI_REGISTRY_IMAGE="\"$CI_REGISTRY_IMAGE\""
+      -e REGISTRY_LOGIN="\"$CI_REGISTRY_USER\""
+      -e REGISTRY_PASSWORD="\"$CI_JOB_TOKEN\""
+      -e HOST_DOMAIN="\"$HOST_DOMAIN\""
+      -e SERVER_NETWORK_NAME="\"$SERVER_NETWORK_NAME\""
+      -e HTTP_ALLOWED_IP="\"$HTTP_ALLOWED_IP\""
+
+deploy:prod:
+  stage: deploy:prod
+  extends: .deploy
+  only:
+    - main
+  variables:
+    DEPLOY_HOST: "lsmp-prod"
+    SERVICE_NAME_POSTFIX: ""
+    HOST_DOMAIN: "concent.londonsmp.co.uk"
+    SERVER_NETWORK_NAME: "londonsmp_network"
+    HTTP_ALLOWED_IP: ""

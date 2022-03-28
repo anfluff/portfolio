@@ -43,19 +43,19 @@ const projects = ref([
 
 const petProjects = ref([
   {
-    title: 'Zzapp',
-    subtitle: 'Educational web quiz game about Dota2 mechanics',
-    link: 'zzapp',
-    image: zzappImg,
-    tags: [ 'concept', 'product design', 'frontend', 'lead' ]
-  },
-  {
     title: 'Evenedium',
     subtitle: 'Classical strategic board game',
     link: 'evenedium',
     image: evenediumImg,
     noPadding: true,
     tags: [ 'concept', 'design' ]
+  },
+  {
+    title: 'Zzapp',
+    subtitle: 'Educational web quiz game about Dota2 mechanics',
+    link: 'zzapp',
+    image: zzappImg,
+    tags: [ 'concept', 'product design', 'frontend', 'lead' ]
   }
 ])
 </script>

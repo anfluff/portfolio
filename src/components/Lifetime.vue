@@ -323,93 +323,100 @@ const totalHeight = computed(() => {
 })
 const totalWidth = computed(() => columns.value.length * columnWidth.value)
 
+const rowLabelWidth = computed(() => {
+  console.log(window.innerWidth > totalWidth.value)
+  return window.innerWidth > totalWidth.value ? '100%' : '100vw'
+})
+
 </script>
 
 <template>
-  <div
-    class="lifetime"
-    :style="{ width: `${totalWidth}px` }"
-  >
-    <div
-      class="columns"
-      :style="{
+  <div class="lifetime-container">
+    <div class="lifetime">
+      <div
+        class="columns"
+        :style="{
         width: `${totalWidth}px`,
         height: `${totalHeight}px`
       }"
-    >
-      <div
-        v-for="(column, index) in columns"
-        :key="index"
-        :style="{
+      >
+        <div
+          v-for="(column, index) in columns"
+          :key="index"
+          :style="{
           width: `${columnWidth}px`,
           height: `${totalHeight}px`
         }"
-        class="column"
-      >
-        <div class="column-head">
-          <div class="year">
-            {{ column.year }}
-          </div>
-          <div class="age">
-            {{ column.age }}
+          class="column"
+        >
+          <div class="column-head">
+            <div class="year">
+              {{ column.year }}
+            </div>
+            <div class="age">
+              {{ column.age }}
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      class="rows"
-      :style="{
+      <div
+        class="rows"
+        :style="{
         top: `${rowsMarginTop}px`,
         width: `${totalWidth}px`,
       }"
-    >
-      <div
-        v-for="(row, index) in rows"
-        :key="index"
-        :style="{
+      >
+        <div
+          v-for="(row, index) in rows"
+          :key="index"
+          :style="{
           width: `${totalWidth}px`,
           height: `${row.itemRows.length * rowHeight + rowInitialHeight}px`
         }"
-        class="row"
-        :class="row.mark"
-      >
-        <div class="row-label">
-          {{ row.label }}
-        </div>
-        <div class="items">
+          class="row"
+          :class="row.mark"
+        >
           <div
-            v-for="(itemRow, index) in row.itemRows"
-            :key="index"
-            :style="{
-              height: `${rowHeight}px`
-            }"
-            class="item-row"
+            class="row-label"
+            :style="{ width: rowLabelWidth }"
           >
+            {{ row.label }}
+          </div>
+          <div class="items">
             <div
-              v-for="(item, index) in itemRow"
+              v-for="(itemRow, index) in row.itemRows"
               :key="index"
               :style="{
+                height: `${rowHeight}px`
+              }"
+              class="item-row"
+            >
+              <div
+                v-for="(item, index) in itemRow"
+                :key="index"
+                :style="{
                 left: `${columnWidth * item.start}px`,
                 width: `${columnWidth * item.length}px`,
               }"
-              class="item"
-            >
-              <div class="item-label">
-                {{ item.label }}
-              </div>
-              <div
-                v-if="item.tooltip"
-                class="item-tooltip"
-                :class="{ 'right': item.tooltipOnRight }"
+                class="item"
               >
-                <temaplte v-html="item.tooltip" />
+                <div class="item-label">
+                  {{ item.label }}
+                </div>
                 <div
-                  v-if="item.link"
-                  class="item-tooltip-link"
+                  v-if="item.tooltip"
+                  class="item-tooltip"
+                  :class="{ 'right': item.tooltipOnRight }"
                 >
-                  <router-link :to="item.link">
-                    To project →
-                  </router-link>
+                  <div v-html="item.tooltip" />
+                  <div
+                    v-if="item.link"
+                    class="item-tooltip-link"
+                  >
+                    <router-link :to="item.link">
+                      To project →
+                    </router-link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -421,10 +428,15 @@ const totalWidth = computed(() => columns.value.length * columnWidth.value)
 </template>
 
 <style scoped>
+.lifetime-container {
+  display: flex;
+  justify-content: center;
+}
+
 .lifetime {
   position: relative;
   overflow-x: scroll;
-  margin: 0 auto;
+  display: inline-block;
 }
 
 .columns {
@@ -449,7 +461,6 @@ const totalWidth = computed(() => columns.value.length * columnWidth.value)
 
 .rows {
   position: absolute;
-  width: 100%;
 }
 .row {
   border-bottom: 1px dashed var(--color-text);
@@ -458,7 +469,7 @@ const totalWidth = computed(() => columns.value.length * columnWidth.value)
   position: sticky;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   font-size: 2em;
   margin-bottom: .5em;
@@ -490,6 +501,7 @@ const totalWidth = computed(() => columns.value.length * columnWidth.value)
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
+  user-select: none;
 }
 .item-tooltip {
   position: absolute;
@@ -518,9 +530,6 @@ const totalWidth = computed(() => columns.value.length * columnWidth.value)
   display: block;
 }
 
-@media screen and (max-width: 767px) {
-  .lifetime {
-    width: 100% !important;
-  }
+@media screen and (min-width: 1900px) {
 }
 </style>

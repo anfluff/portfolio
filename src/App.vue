@@ -120,8 +120,7 @@ br {
 
 .tabs-menu {
   text-align: center;
-  margin-top: 3em;
-  margin-bottom: 2em;
+  margin: 3em 0;
 }
 .tabs-menu button {
   background: none;

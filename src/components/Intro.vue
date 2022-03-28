@@ -19,7 +19,7 @@
           Product Design
         </div>
         <div class="popover">
-          🤍 Figma One Love
+          💛 Figma One Love
         </div>
       </div>.
       I implement and polish interfaces on
@@ -111,6 +111,7 @@ h1 {
   position: relative;
 }
 .popover-container .popover-trigger {
+  user-select: none;
   border-bottom: 1px dashed var(--color-text);
 }
 .popover-container .popover {

@@ -21,13 +21,31 @@ import Lifetime from '../components/Lifetime.vue'
         </div>
       </div>
       <div>
-        <div class="label">Here is my CV</div>
-        <a>Click to download↓</a>
+        <div>
+          <div class="label">Here is my CV</div>
+          <a href="../../public/cv.pdf" download>Click to download↓</a>
+        </div>
+
+        <div style="margin-top: 3em">
+          <div class="label">Contacts</div>
+          <div>
+            <a
+              href="mailto:nickolayanatolievich@gmail.com"
+            >nickolayanatolievich@gmail.com</a>
+          </div>
+          <div>
+            <a
+              href="https://t.me/afluff"
+              target="_blank"
+            >t.me/afluff</a>
+          </div>
+        </div>
       </div>
     </div>
     <div>
-      And here is my lifetime experience:
-
+      <div class="label">
+        And here is my lifetime experience:
+      </div>
       <div class="subtitle">
         Feel free to hover items to see more info
       </div>
@@ -60,6 +78,7 @@ import Lifetime from '../components/Lifetime.vue'
 }
 .label {
   margin-bottom: .5em;
+  color: var(--color-text-accent);
 }
 
 .image {

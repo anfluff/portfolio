@@ -16,7 +16,7 @@ import Lifetime from '../components/Lifetime.vue'
       <div>
         <div>
           <div class="label">Here is my CV</div>
-          <a href="../../public/cv.pdf" download>Click to download↓</a>
+          <a href="/cv.pdf" download>Click to download↓</a>
         </div>
 
         <div style="margin-top: 3em">

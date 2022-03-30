@@ -60,17 +60,14 @@ function setTab (value) {
         class="tab"
       >
         <div class="text accent">
-          London School of Mathematics and Programming — Лондонская школа, занимающаяся дополнительным образованием для
-          детей -
-          вечерними курсами, курсами выходных дней, многодневными кампами.
+          London School of Mathematics and Programming is the London based company focused on supplementary education: evening programmes, weekend courses, multi-day camps.
           <br>
-          За 4 года мы с командой создали полностью <b>кастомную CRM + LMS систему</b>.
+          For 4 years, my team and I have created a completely <b>custom CRM + LMS system</b>.
           <br>
-          Созданная нами система позволила перевести управление всеми процессами в удобную форму, а также запустить онлайн образование.
+          The system we created made it possible to transfer the management of all processes into a user-friendly interface, as well as to launch online education.
           <br>
-          Моя роль на проекте — <b>фуллстак фронтенд и тимлид</b>. В нашей команде 2 фронтеда, 2 бекенда и 1
-          тестировщик.
-          Все проектирование и внутренняя коммпуникация — моя зона ответственности.
+          My role on the project is <b>fullstack frontend and teamlead</b>. Our team has 2 frontends, 2 backends and 1 tester.
+          All design and internal communication is my area of responsibility.
         </div>
 
         <Technologies :technologies="technologies"/>
@@ -82,22 +79,18 @@ function setTab (value) {
       >
         <img src="../assets/projects/lsmp/1.png" alt="Nicolay Apraksin / LondonSMP / Intro">
         <div class="text">
-          Основная специализация школы — <b>дополнительное образование</b>. Вечерние занятия, занятия выходного дня,
-          многодневные кампы на каникулах. Система оптимальным образом закрывает нужды всех участинков образовательного процесса.
+          The main specialization of the school is <b>supplementary education</b>: evening courses, weekend classes, multi-day vacation camps. The system optimally covers the needs of participants of the educational process.
           <br>
-          <b>Ученикам</b> система предоставляет собранную под запросы и нужды ребенка учебную программу.
-          Обучение проходит в интересной форме при постоянном спорождении учителем.
+          <b>Students</b> recieve a curriculum assembled to their needs.
+          Learning process is delivered in modern forms with constant encouragement by the teacher.
           <br>
-          <b>Родители учеников</b> следят за прогрессом детей и получают информации об успеваемости и пройденном материале.
+          <b>Parents of students</b> monitor their children progress and receive information about the covered material.
           <br>
-          <b>Учителя</b> ведут занятия, в реальном времени формируя необходимый ученику конент, проверяют работы учеников,
-          отмечают посещаемость и оставляют комментарии об успеваемость для родителей и администрации.
+          <b>Teachers</b> conduct classes providing necessary content in real time, and check students homework, set attendance and leave comments about progress for parents and administration.
           <br>
-          <b>Методисты</b> создают учебные программы на основе которых формируются курсы и уроки. Такая база облегчает их
-          работу за счет реиспользования контента.
+          Courses and lessons are formed on the basis of curricula created by <b>Methodists</b>.
           <br>
-          <b>Администрация</b> формирует сетки расписаний по школам, следит за активностью детей и преподавателей,
-          оценивает финансовое состояние школы, проводить рекламные компании и рассылки.
+          <b>Administration</b> forms schedule grids for schools, monitors the activity of children and teachers, assesses the financial plans of the school, runs advertising campaigns and mailing lists.
         </div>
       </div>
 
@@ -106,163 +99,156 @@ function setTab (value) {
         class="tab"
       >
         <div class="text">
-          Меня позвали в начинающийся проект фуллстак разработчиком.
-          Задача заказчика была быстро <b>создать LMS систему</b> с определенными требованиями.
-          С нуля создать такой продукт в сжатые сроки конечно же невозможно.
+          I was invited to a startup as a full-stack developer.
+          The customer's task was to <b>create an LMS system</b> with specific requirements in a short time.
+          Of course, it is impossible to create such a product from scratch in a short time.
           <br>
-          Поэтому было принято решение взять <b>опенсорс LMS Moodle</b> и доплнить её кастомными
-          модулями для решения задач заказчика — расширенным функционалом регистрации, учета потребностей учеников, разными типами курсов и учебных программ.
+          Therefore, it was decided to take the <b>open source LMS Moodle</b> and supplement it with custom modules for solving customer problems: advanced authorisation functionality, students special needs monitorring, creating various types of courses and training programs.
           <br>
-          После создания технического костяка следующим этапом было <b>проектирование и реализация собственного интерфейса</b>.
-          По ходу его интеграции стало понятно, что не все наши потребности могут быть удоблетворены модулями Moodle.
+          After creating the technical backbone, the next step was to <b>design and implement own interface</b>.
+          By the time it became clear that not all of our needs can be satisfied with Moodle modules.
           <br>
-          По этой причине я начал писать <b>свой бекенд на PHP</b> который расширял функции мудла.
-          С его развитие стало ясно, что собственные структуры данных и логика работы с ними куда больше подходят проету, нежели алгоритмы Moodle.
-          Постепенно вся логика перешла с мудла на свой бек, который лишь иногда обращался к сервисам мудл.
-          Но этот бекенд, хоть и <b>реализовывал MVC подход</b>, не использовал современных фреймворком что отягощало дальнейшую разработку.
+          I've developed <b>backend on PHP</b> extending the functionality of the moodle.
+          In the course of development, it became clear that its own data structures and the logic are much more suitable for the project than Moodle algorithms.
+          Gradually, all the logic moved from the moodle to my custom developed backend, which only accessed the services of the moodle.
+          But this backend, although it <b>implemented the MVC approach</b>, did not use modern frameworks, which burdened further development.
           <br>
-          Проект начал расти и был нанят бекенд разработчик, котоырй взял на себя написание нового полноценного бекенда на Symphony,
-          что в скором времни позволило отрезать Moodle.
+          The project began to grow and a backend developer was hired, who took over the coding of a new full-fledged Symphony backend, which soon allowed Moodle to be cut off.
           <br>
-          Так как Moodle является статичным синхронным сайтом, то фронтенд изначально представлял из себя набор страниц,
-          каждая из которых была независимым инстансом vue.
-          Переход на собственный бекенд позволил объединить все эти страницы в <b>единый асинхронный фронтенд</b> с подгрузкой данных по необходимости.
+          Since Moodle is a static synchronous site, the frontend was originally built as a set of pages, each of them was an independent vue instance.
+          The transition to our own backend allowed us to combine all these pages into a <b>single page asynchronous frontend</b>.
           <br>
-          Где то с этого момента началась современная история нашей системы, которую мы с командой зовем Concent LMS.
+          The modern history of our system starts over here. We call it Concent LMS.
 
           <h2>Concent LMS</h2>
-          Урок является основным компонентом системы для ученика.
+          The lesson is the main component of the system for the student.
           <br>
-          Автор курса составляет содержимое уроков из упражений. Упражнение — не просто текст, информация подается в удобной для тематики упражнения форме.
-          Он может содержать <b>интерактивные графические редакторы, квизы</b> проверяющие знания учеников, домашние задания и многое другое.
+          The author of the course integrates exercises to a lesson. The exercise is not just a text, the information is presented in a form convenient for the subject of the exercise.
+          It may contain <b>interactive graphic editors, quizzes</b>, homework assignments and much more.
         </div>
         <img src="../assets/projects/lsmp/2_2.png" alt="Nicolay Apraksin / LondonSMP / Lesson">
         <div class="text">
-          Но не все ученики проходят материал уроков равномерно.
-          У учителя есть <b>фукционал кастомизации урока</b> для каждого из учеников — можно скрывать упражнения, хинты и
-          солюшены.
+          But not all students go through the lesson material evenly.
+          The teacher has a <b>lesson customization functionality</b>: each of the students may receive personal formed content.
           <br>
-          Необходимо вывести подсказку ученику? Один клик и содержимое урока у ученика обновится.
+          Want to show the hint to the student? It is possible with a single click.
         </div>
         <img src="../assets/projects/lsmp/3_7.png" alt="Nicolay Apraksin / LondonSMP / Lesson configuration for students">
         <div class="text">
-          <h2>Интерактивные задания</h2>
-          Одним из интересных функционалов системя являются интерактивные задания — <b>векторный редактор на основе Canvas</b>.
+          <h2>Interactive tasks</h2>
+          One of the interesting features of the system are interactive tasks - <b>vector editor based on Canvas</b>.
         </div>
         <img src="../assets/projects/lsmp/2_4.png" alt="Nicolay Apraksin / LondonSMP / Interactive task">
         <div class="text">
-          Учитель с учеником поочередно могут вносить изменения, которые сохраняются в истории.
-          Всегда можно посмотреть прошлые состояния.
+          The teacher and the student can make changes that are saved in the history.
+          You can always look at past states.
         </div>
         <img src="../assets/projects/lsmp/2_3.png" alt="Nicolay Apraksin / LondonSMP / Interactive task history">
         <div class="text">
           <h2>Quizzes</h2>
-          Второй интересный интерактивный элемент — квизы — опросники, закрепляющие знания ученика.
+          The second interesting interactive element is quizzes - questionnaires that reinforce the knowledge of the student.
           <br>
-          Вопросов могут быть:
+          Questions can be:
           <ul>
-            <li>Выбор из вариантов ответов</li>
-            <li>Открытый вопрос с кратким текстом</li>
-            <li>Вопрос с перетаскиванием элементов в слоты</li>
-            <li>Вопрос с открытм богатым текстом и загрузкой файлов</li>
-            <li>Вопрос с интерактивным заданием</li>
+            <li>Choose from answer options.</li>
+            <li>Open question with short text.</li>
+            <li>Question with dragging elements into slots.</li>
+            <li>Question with open rich text and file upload.</li>
+            <li>Interactive tasks.</li>
           </ul>
         </div>
         <img src="../assets/projects/lsmp/2_6.png" alt="Nicolay Apraksin / LondonSMP / Quiz">
         <div class="text">
-          Большинство вопросов проверяются автоматически.
-          В них могут быть несколько верных вариантов — составитель квиза самостоятельно выставляет какое количество баллов получит ученик.
+          Most questions are checked automatically.
+          There may be several correct options in them - the compiler of the quiz independently sets how much scores the student will get.
         </div>
         <img src="../assets/projects/lsmp/2_7.png" alt="Nicolay Apraksin / LondonSMP / Quiz results">
 
         <div class="text">
           <h2>Lesson administration</h2>
-          Во время урока учитель может видеть прогресс каждого ученика.
-          Для составления общей картины требуется <b>сводный интерфейс</b>.
+          During the lesson, the teacher can see the progress of each student.
+          A <b>summary interface</b> is required to get the big picture.
           <br>
-          Овервью урока позволяет увидеть активность всех учеников разом, прогресс по домашним заданиям и квизам, выставить оценки.
+          The lesson overview allows you to see the activity of all students at once, progress on homework and quizzes, and set grades.
         </div>
         <img src="../assets/projects/lsmp/3_8.png" alt="Nicolay Apraksin / LondonSMP / Lesson overview">
         <div class="text">
-          Вторым важным интерфейсом обзора курса является <b>Attendance</b>.
+          The second important course overview interface is <b>Attendance</b>.
           <br>
-          Учитель проставляет посещение занятий,
-          помечает активноть учеников на уроке, оставляет комментарии — для родителей и для администрации.
+          The teacher marks the attendance of classes, rates the activity of students in the lesson, leaves comments - for parents and for the administration.
         </div>
         <img src="../assets/projects/lsmp/3_1.png" alt="Nicolay Apraksin / LondonSMP / Lesson Attendance">
         <div class="text">
-          У администраторов есть свой интерфейс просмотра учеников курса.
-          Для них самым важным является статус записи, диапазон дат и оплата.
+          Administrators have their own interface for viewing course students.
+          The status of the entry, date range and payment is the most important for them.
         </div>
         <img src="../assets/projects/lsmp/3_2.png" alt="Nicolay Apraksin / LondonSMP / Course users">
         <div class="text">
-          На курс можно записаться разными способами:
+          You can enroll to the course in a number of ways:
           <ul>
-            <li>Триальное занятие — запись на пробный урок.</li>
-            <li>Сабститут — замещение урока другого курса.</li>
-            <li>Полная запись — администратор выбирает диапозон дат.</li>
+            <li>Trial lesson.</li>
+            <li>A substitute is a replacement for a lesson in another course.</li>
+            <li>Full Entry - Administrator selects a range of dates.</li>
           </ul>
-          Ученику доступен материал только тех уроков, на которые выпадает его запись.
+          The student has access only to the materials of courses they are enrolled to.
         </div>
         <img src="../assets/projects/lsmp/3_4.png" alt="Nicolay Apraksin / LondonSMP / Enrollment">
         <div class="text">
-          <h2>Упражнения</h2>
-          Каждое упражнение имеет свою тематику и уровень сложности, файлы и комментарии, квизы и интерактивные редакторы, хинты и солюшены.
+          <h2>Exercises</h2>
+          Each exercise has its own theme, difficulty level, files and comments, quizzes and interactive editors, hints and solutions.
         </div>
         <img src="../assets/projects/lsmp/3_6.png" alt="Nicolay Apraksin / LondonSMP / Exercise">
         <div class="text">
-          Из упражнений методосты сотавляют <b>учебные программы</b>.
+          <b>Learning Programs</b> are built by Methodists of exercises.
           <br>
-          Каждая учебная программа объединяет в себе все материалы на определенную тематику.
-          Они огранизоваы по главам, освящающим этапы освоения дисциплины.
-          Каждая глава наполняется подходящими упражнениями, из которых собираются сеты — блоки упражнений на основе которых удобно создавать уроки.
+          Each learning program combines all the materials on a specific topic.
+          They are organized by chapters, consecrating the stages of mastering the discipline.
+          Each chapter is filled with suitable exercises. Exercises built together form sets: blocks of exercises on the basis of which it is convenient to create lessons.
         </div>
         <img src="../assets/projects/lsmp/3_9.png" alt="Nicolay Apraksin / LondonSMP / Library">
 
         <div class="text">
           <h2>Chats & Notifications</h2>
-          Для общения внутри системы реализована система чатов.
-          Технически она выполнена при помощи <b>сокетов</b>, что позволяет обмениваться сообщениями в реальном времени.
+          To communicate within the system, a chat system is implemented.
+          Technically, it is buit on <b>sockets</b>, which allows you to exchange messages in real time.
           <br>
-          Чаты могут существовать независимо или привязыватсья к курсам.
+          Chats can exist independently or be linked to courses.
         </div>
         <img src="../assets/projects/lsmp/4_2.png" alt="Nicolay Apraksin / LondonSMP / Chat">
         <div class="text">
-          Сообщения о всех важных событиях приходят в виде <b>нотификаций</b> — запись на курс, новый урок, проверен квиз,
-          ноавя оценку за домашнее задание и тд.
+          Every important event comes with <b>notification</b> — enrollment on a course, a new lesson, a quiz review, a new grade for homework, and so on.
           <br>
-          Также уведомления крайне важны для администрации — они полуают уведомления обо всей активности пользователей в системе.
+          Notifications are also extremely important for the administration - they receive informations about all user activity in the system.
 
           <h2>Room allocation & Summary</h2>
-          Раскладку расписания администраторы формируют через <b>Room Allocation</b>.
-          Распределить уроки по комнатам и времени можно перетаскиванием.
+          Administrators form the schedule by <b>the Room Allocation</b>.
+          You can distribute lessons by room and time by dragging and dropping.
           <br>
-          Нажав на имя переподавателя можно узнать о его загруженности.
+          By clicking on the name of the teacher, you can find out about his workload.
           <br>
-          Всем выбранным препоадавателям возможно разослать уведомления об изменениях в расписании.
+          It is possible to send notifications about changes in the schedule to all selected teachers.
         </div>
         <img src="../assets/projects/lsmp/5_2.png" alt="Nicolay Apraksin / LondonSMP / Room Allocation">
         <div class="text">
-          Другим сводным интерфейсом помогающим оценить загруженность дня является <b>Summary</b>.
+          The <b>Summary</b> is another big interface that helps administration overview the day.
           <br>
-          Здесь отображаюатся уроки расставленные по временной очередности.
-          В каждом их них выводятся ученики с информацией важной администратору школы —
-          типом записи, информацией об оплате, других уроках ученика в этот день, конактная информация родителей.
+          Lessons are displayed in order of time.
+          Each of them represents students with important information for administrator: type of enrollment, payment information, other lessons of the student on that day, contact information of parents.
         </div>
         <img src="../assets/projects/lsmp/5_3.png" alt="Nicolay Apraksin / LondonSMP / Summary">
 
         <div class="text">
           <h2>Landing constructor</h2>
-          Онлайн курсы требуют продвижения.
-          Очевидным решением было создавать лендинги, нагнетающие трафик на продающие страницы курса.
-          Чтобы не делать лендинги каждый раз вручную, было принято решение разработать <b>конструктор лендингов</b>.
+          Online courses require advertising.
+          The obvious solution was to create landing pages that drive traffic to the selling pages of the course.
+          In order not to make landings manually every time, it was decided to develop a <b>landing constructor</b>.
           <br>
-          Получившаяся система позволяет создавать многостраничный лендинг.
-          Каждая страница наполняется блоками, каждый из которых спроектирован под презентацию информации определенных типов.
+          The resulting system allows you to create a multi-page landing.
+          Each page is filled with blocks, each designed to presentat infrormation of certain type.
           <br>
-          Готовые лендинги работают на связке <b>Nuxt + SSR</b>.
+          Ready-made landings drived by <b>Nuxt + SSR</b>.
           <br>
-          Ниже представлен пример страницы собранной при помощи конструктора.
+          Below is an example of a page assembled using the constructor.
         </div>
         <img src="../assets/projects/lsmp/6_1.png" alt="Nicolay Apraksin / LondonSMP / Landing">
       </div>
@@ -272,27 +258,23 @@ function setTab (value) {
         class="tab"
       >
         <div class="text">
-          Систему можно представить как связку основного ядра с набором расширяющих модулей.
+          The system can be represented as a bundle of the main core with a set of extension modules.
           <br>
-          Часть из них расширяют функционал сущностей, например модуль квизов для упражнений.
-          Другие являются независимыми системами, например, Нотификации или Чаты.
+          Some of them extend the functionality of entities, such as the quiz module for exercises.
+          Others are independent systems, such as Notifications or Chats.
         </div>
         <img src="../assets/projects/lsmp/tech_1.svg" alt="Nicolay Apraksin / LondonSMP / Scheme">
         <div class="text">
-          На текущий момент система реализует нужды следующего списка ролей:
+          At the moment, the system implements the needs of the following roles:
           <ul>
-            <li>Гость — ищет интересуюищее его курсы, регистрируется в системе.</li>
-            <li>Родитель — регистрирует детей, покупает детям курсы, следит за образовательным прогрессом.</li>
-            <li>Ученик — потребляет статичный и интерактивный образовательный контент.</li>
-            <li>Учитель — ведет занятия, управляет контентом доступным ученикам, сопровождает учеников в чатах, ставит
-              оценки.
-            </li>
-            <li>Методист — создает учебный программ — базы образовательного контента.</li>
-            <li>Head of learning — создат курсы, наполняет их уроками и упражнениями.</li>
-            <li>Администратор — записывает на курсы учеников, взаимодействует с входящими заявками, формирует вейтинг
-              листы.
-            </li>
-            <li>Директор — смотрит общую статистику и аналитику системы.</li>
+            <li>Guest: searches for courses of interest to him, registers to the system.</li>
+            <li>Parent: registers children, buys courses for children, monitors educational progress.</li>
+            <li>Student: consumes educational content.</li>
+            <li>Teacher: runs classes, manages content available to students, accompanies students in chats, puts grades.</li>
+            <li>Methodist: build learging programmes.</li>
+            <li>Head of learning: create courses, fill them with lessons and exercises.</li>
+            <li>Administrator: enrolling students to courses, interacts with incoming applications, buids waiting lists.</li>
+            <li>Director: observes statistics and analytics of the system.</li>
           </ul>
         </div>
       </div>

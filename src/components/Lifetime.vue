@@ -323,10 +323,7 @@ const totalHeight = computed(() => {
 })
 const totalWidth = computed(() => columns.value.length * columnWidth.value)
 
-const rowLabelWidth = computed(() => {
-  console.log(window.innerWidth > totalWidth.value)
-  return window.innerWidth > totalWidth.value ? '100%' : '100vw'
-})
+const rowLabelWidth = computed(() => window.innerWidth > totalWidth.value ? '100%' : '100vw')
 
 </script>
 

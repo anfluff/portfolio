@@ -37,17 +37,17 @@ function setTab (value) {
         class="tab"
       >
         <div class="text accent">
-          После неудачи с <router-link to="zzapp" >ZZapp→</router-link> я задумался как сделать игру, но сделать проект конечным и реализовываемым.
-          Решение оказалось очевидным — сделать настольну игру!
+          After failing with <router-link to="zzapp" >ZZapp→</router-link>, I thought about how to make a game, but make the project final and achievable.
+          The solution was obvious - make a board game!
 
-          Обсудив идею с товарищем мы быстро пришли к пониманию и взялись за дело.
+          After discussing the idea with a friend, we quickly came to an understanding and got down to business.
           <br>
-          Evenedium — классическая стратегиеская настольная игра. Вы играете за небольшое племя, ищущее свой путь в большом мире.
-          Исследуйте игровой мир, находите артефакты былых эпох, конкурируйте оппонентов, а главное — напишите об этом свой легендарный эпос!
+          Evenedium is a classic strategy board game. You play as a small tribe looking for their way in the big world.
+          Explore the map, find artifacts from past eras, compete with opponents, and most importantly: write your own legendary epic about it!
           <br>
-          Игра рассчитана на 2-4 игроков. Партия может занимать от 30 минут до 2х часов.
+          The game is designed for 2-4 players. A game can take from 30 minutes to 2 hours.
           <br>
-          Моей ролью была разработка концепции, правил и создание всего дизайна.
+          My role was to develop the concept, rules and create the entire design.
         </div>
 
         <Technologies :technologies="technologies" />
@@ -57,59 +57,57 @@ function setTab (value) {
         class="tab"
       >
         <div class="text">
-          Вы — вождь небольшого племени наакари, которое пытается выжить и_прославить себя в безжалостных диких землях Камотлана, перекопанных давней войной. Ваше становление начинается на руинах прошлого, и фундамент своего народа вы складываете здесь и сейчас из обломков ушедших культур.
+          You are the leader of a small Naakari tribe that is trying to survive and glorify itself in the ruthless wild lands of Camotlan, dug up by a long war. Your formation begins on the ruins of the past, and you build the foundation of your people here and now from the ruins of bygone cultures.
         </div>
         <img src="../assets/projects/evenedium/orb.png" alt="Nicolay Apraksin / Evenedium / World map">
         <div class="text">
-
-          Игра идет на поле состящем из гексов. Гексы объединяются в блоки 3х5. Гексы соединены дорогами.
-          Блоки можно соединить любым образом, чтобы между ними оказалать хоть одна дорога.
-          Это позволяет игровому полю быть максимально вариативным.
+          The game is played on a field consisting of hexes. Hexes are combined into 3x5 blocks. The hexes are connected by roads.
+          Blocks can be connected in any way to have at least one road between them.
+          This allows the playing field to be as varied as possible.
           <br>
-          Все гексы содержат в себе ланшафт. Изначально он закрыт, но можно провести освоение гекса и ландшафт откроется.
-          При кажном освоении происходит случайное событие — там может быть либо находка, либо дилема, либо испытание.
+          All hexes contain a landscape. Initially, it is closed, but you can spend the development of the hex and the landscape will open.
+          With each development, a random event occurs: there can be either a find, a dilemma, or a challenge.
           <br>
-          Вокруг поля раскладываются гексы с достяжениями, из которых формируется легендарный эпос племени.
+          Around the field laid hexes with achievements. The legendary epic of the tribe is formed by these.
         </div>
         <img src="../assets/projects/evenedium/1.png" alt="Nicolay Apraksin / Evenedium / World map">
 
         <div class="text">
-          Весь визуальный стил строется на противостоянии двух стихий -
-          магической (бирюзовой, плавной, текучей) и стимпанковой (рыжей, острой, грубой).
+          The whole visual style is based on the opposition of two elements - magical (teal, smooth, fluid) and steampunk (red, sharp, rough).
         </div>
         <img src="../assets/projects/evenedium/2.png" alt="Nicolay Apraksin / Evenedium / Fast start">
 
         <div class="text">
-          К игре прикладываются две брошюры — быстрый старт и полные правила.
-          В быстром старте мы постарались наглядно и красочно описать основные концепции игры.
+          The game comes with two rulebooks: a Quick Start and Full Rules.
+          In a Quick Start, we tried to clearly and colorfully describe the main concepts of the game.
         </div>
         <img src="../assets/projects/evenedium/1_a.png" alt="Nicolay Apraksin / Evenedium / Fast start: inside ">
         <div class="text">
-          В полных правилах полноценно описываются все механики и их особенности.
+          The Full Rules fully describe all the mechanics and their features.
         </div>
         <img src="../assets/projects/evenedium/3.png" alt="Nicolay Apraksin / Evenedium / Full rules">
         <div class="text">
-          Стратегическая игра конечно же подразумевает строительство зданий. Карта подсказка расскажет стоимость и характеристики.
-          На обратной её стороне игрок найдет все достяжения — куплеты песни.
+          A strategy game, of course, involves the construction of buildings and hiring units. A hint card will tell you the costs and features.
+          On its reverse side, the player will find all the achievement: the verses of the song.
         </div>
         <img src="../assets/projects/evenedium/4.png" alt="Nicolay Apraksin / Evenedium / Player helper">
         <div class="text">
-          Карты событий. Все, кроме четырех, поделены пополам — верхняя часть описывает происходящее событие — либо находку, либо дилему, либо испытание.
-          Нижняя же показывает улучшение — магическое или технологическое — которую при особых условиях может быть выучено игроком.
+          Event cards. All but four are divided in half. The upper part describes the ongoing event: either a find, or a dilemma, or a challenge.
+          The lower one shows an improvement. It could be magical or technological. Under special conditions it can be adopted by the player.
           <br>
-          Четыре карты исключения — редкие реликты, которые могут усилить племя игрока.
+          The four exclusion cards are rare relics that can strengthen the player's tribe.
         </div>
         <img src="../assets/projects/evenedium/5.png" alt="Nicolay Apraksin / Evenedium / Action cards">
 
         <div class="text">
-          Наше племя совсем не люди. Это наакари! Существа всю жизнь живушие в необычноым мире.
-          Их тело может адаптироваться по нужды, а потом и сам их внешний вид и вид их построек имеет совершенно необычные очертания.
+          Our tribe is not human at all. It's Naakari! Creatures living in an unusual world all their lives.
+          Their body can adapt according to need, and then their appearance and the appearance of their buildings have completely unusual outlines.
         </div>
         <img src="../assets/projects/evenedium/6.png" alt="Nicolay Apraksin / Evenedium / Icons">
 
         <div class="text">
-          Фишки существ — цветные на черном фоне. Фишки зданий — черные на цветом.
-          Оборотная сторона фишек — штрих. Переворачиваются фишки, когда совершили все действия возможные в данном ходу.
+          Creature tokens are colored on a black background. Building tokens are black on color.
+          The reverse side of the tokens is a stroke. The tokens are turned over when they have performed all the actions possible in this turn.
         </div>
         <img src="../assets/projects/evenedium/7.png" alt="Nicolay Apraksin / Evenedium / Creatures and buildings tokens">
         <img src="../assets/projects/evenedium/game.jpg" alt="Nicolay Apraksin / Evenedium / Game printed">

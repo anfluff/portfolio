@@ -30,16 +30,16 @@
         <div class="popover">
           Current stack:
           <ul class="tags">
-            <li>vue3</li>
-            <li>vite</li>
+            <li class="tag">vue3</li>
+            <li class="tag">vite</li>
           </ul>
           <div>
             Elder tech:
             <ul class="tags">
-              <li>vue2</li>
-              <li>angular2</li>
-              <li>angular1</li>
-              <li>webpack</li>
+              <li class="tag">vue2</li>
+              <li class="tag">angular2</li>
+              <li class="tag">angular1</li>
+              <li class="tag">webpack</li>
             </ul>
           </div>
         </div>
@@ -53,17 +53,17 @@
         <div class="popover">
           Current stack:
           <ul class="tags">
-            <li>node</li>
-            <li>express</li>
-            <li>mongodb</li>
-            <li>mongoose</li>
+            <li class="tag">node</li>
+            <li class="tag">express</li>
+            <li class="tag">mongodb</li>
+            <li class="tag">mongoose</li>
           </ul>
           <div>
             Elder tech:
             <ul class="tags">
-              <li>php</li>
-              <li>zend</li>
-              <li>mysql</li>
+              <li class="tag">php</li>
+              <li class="tag">zend</li>
+              <li class="tag">mysql</li>
             </ul>
           </div>
         </div>

@@ -30,6 +30,7 @@ defineProps({
       <li
         v-for="(tag, index) in tags"
         :key="index"
+        class="tag"
       >
         {{ tag }}
       </li>

@@ -38,18 +38,18 @@ function setTab (value) {
         class="tab"
       >
         <div class="text accent">
-          Браузерная квиз игра для обучения игре в Dota 2.
+          Browser quiz game for learning how to play Dota 2.
           <br>
-          Dota 2 является одной из лидирующих дисциплин с миллионами игроков.
-          Киберспортсмены получают значимые призовые, рядовые игроки видят эти возмоности и стремятся в их ряды.
+          Dota 2 is one of the leading esports disciplines with millions of players.
+          Esports players receive significant prize money, ordinary players see these opportunities and strive to join their ranks.
           <br>
-          Мы хотели создать игру, которая помогала бы этим игрокам расти, а также скрашивала их досуг среди так любимого ими антуража.
-          Планировали монетизироваться через внутреигровые покупки и трафик.
+          We wanted to create a game that would help these players grow and also brighten up their leisure time in the environment they love so much.
+          We planned to monetize through in-game purchases and traffic.
           <br>
-          Разрабатывали вдвоем с товарищем. На мне был дизайн, фронтенд и управление проектом. На товарище бекенд.
+          Developed with a friend. I was responsible for design, front-end and project management.
           <br>
-          Проект мы разработали и довели до логической точки, запустились, получили позитивные отзывы игроков.
-          Дальше натолкнулись необзодимость постоянного обновления контента, на что требуется финансирование, которого у нас не было.
+          We developed the project and launched it, received positive feedback from the players.
+          Then we came across the need to constantly update the content, which requires funding, which we did not have.
         </div>
 
         <Technologies :technologies="technologies" />
@@ -59,87 +59,86 @@ function setTab (value) {
         class="tab"
       >
         <div class="text">
-          Игроки в Dota 2 настолько увлечены своим хобби, что все свободное время тратят на игру.
-          Когда они не играю, они потребляют сопутствующей игре контент — просмотр стримов турниров и других известных игроков.
+          Dota 2 players are so passionate about their hobby that they spend all their free time on the game.
+          When they're not playing, they're consuming the game's accompanying content - watching live streams of tournaments and other famous players.
           <br>
-          Просмотр стримов — пассивное дело.
-          Тут то на сцену и выходит наша игра.
-          Зачем просто смотреть стрим, если можно смотреть стрим и тут же играть?
+          Watching streams is a passive affair.
+          This is where our game comes into play.
+          Why just watch the stream when you can watch the stream and play right there?
           <br>
-          Главный экран игры предлагал выбрать интересующий тебя стрим.
+          The main screen of the game prompted you to select the stream you were interested in.
         </div>
         <img src="../assets/projects/zzapp/1.png" alt="Nicolay Apraksin / Zzapp / Index">
         <div class="text">
-          Cтрим открывается на часть экрана, а на оставшемся пространстве запускается игра.
+          The stream opens on part of the screen, and the game starts on the remaining space.
         </div>
         <img src="../assets/projects/zzapp/1a.png" alt="Nicolay Apraksin / Zzapp / Stream">
         <div class="text">
-          Второй сценарием использования игры — занять время, когда компьютер недоступен.
+          The second scenario for using the game is to take time when the computer is not available.
           <br>
-          Игра полносностью адаптирована под мобильные платформы, которые всегда под рукой:
-          в транспорте, в перерывах между учебой, перед сном.
+          The game is fully adapted to mobile platforms, which are always at hand: in transport, between studies, before going to bed.
         </div>
         <img src="../assets/projects/zzapp/mobile2.png" alt="Nicolay Apraksin / Zzapp / Mobile game">
 
         <div class="text">
-          <h2>О самой игре</h2>
-          Игра построена на метафорах из Dota 2.
+          <h2>About the game</h2>
+          The game is built on metaphors from Dota 2.
           <br>
-          Каждый сценарий представляет из себя последовательность этапов. Прошел один — выбирай куда двигаться дальше.
+          Each scenario is a sequence of stages. Passed one, choose where to move on.
         </div>
         <img src="../assets/projects/zzapp/2.png" alt="Nicolay Apraksin / Zzapp / Scenario">
 
         <div class="text">
-          Этап состоит из последовательности вопросов.
-          Каждый вопрос поставлен в соответсвие с игровым существом. Каждое существо — свой тип вопроса.
-          Выбор одного из двух вариантов, из четырех, выбор неколько их четырех ответов и тд.
+          The stage consists of a sequence of questions.
+          Each question is put in accordance with the game creature. Each creature has its own type of question.
+          The choice of one of two options, of four, the choice of several of their four answers, and so on.
           <br>
-          Вопросы на время, не успел — считай неверно ответил!
+          Questions are time limited. Be careful: time is over considered as incorrect answer!
           <br>
-          Игра идет до тех пор, пока у игрока не закончились единцы здоровья.
-          Каждый неверно отвеченный вопрос снимает одну единицу здоровья.
+          The game goes until the player runs out of health.
+          Each incorrectly answered question removes one health point.
           <br>
-          За каждый верно отвеченынй вопрос игрок получает внутреннюю валюту.
-          За неё в игровой лавке можно купить предметы, дающие дополнительные возможности — больше здоровья на старте, восстановление здоровья по ходу игры, пропуск вопроса.
+          For each correctly answered question, the player receives an internal currency.
+          In the game shop you can buy items that provide additional opportunities - more health at the start, health recovery during the game, skipping a question and so on.
         </div>
         <img src="../assets/projects/zzapp/3.png" alt="Nicolay Apraksin / Zzapp / Game">
 
         <div class="text">
-          Закончилось время? Потерял здоровье.
+          Is time over? Lost health.
         </div>
         <img src="../assets/projects/zzapp/4.png" alt="Nicolay Apraksin / Zzapp / Timeout">
 
         <div class="text">
-          Неверно ответил? Упс.
+          Wrong answer? Oops.
         </div>
         <img src="../assets/projects/zzapp/5.png" alt="Nicolay Apraksin / Zzapp / Wrong answer">
 
         <div class="text">
-          Правильный ответ! Иди дальше, а также получи немного вознаграждения — за тип вопроса, а также за оставшееся время.
+          Correct answer! Go further, and also get some rewards: for the type of question, as well as for the remaining time.
         </div>
         <img src="../assets/projects/zzapp/6.png" alt="Nicolay Apraksin / Zzapp / Write answer">
 
         <div class="text">
-          Внутриигровой магазин с предметами. Накапливай игровую валюту, трать на улучшения!
+          In-game shop with items. Accumulate game currency, spend on improvements!
         </div>
         <img src="../assets/projects/zzapp/7.png" alt="Nicolay Apraksin / Zzapp / Shop">
 
         <div class="text">
-          <h2>Управление</h2>
-          Комплексные административные интерфейсы позволяют редактировать сценарии, категории вопросов, вопросы и тд.
+          <h2>Management</h2>
+          Comprehensive administrative interfaces allow you to edit scenarios, question categories, questions, and more.
           <br>
-          Вопросы в игре касаются контента из самой Dota 2, в них мы выводим названия, иконки, значения.
-          Мы сделали у себя базу этих знаний — героев, существ, их способностей, предметов.
+          Questions in the game are related to content from Dota 2 itself, we display names, icons, specific values.
+          We have made a database of this knowledge - heroes, creatures, their abilities, items.
           <br>
-          При создании вопроса можно воспользоваться поисковым контекстым меню для подставки подходящией сущности.
+          When creating a question, you can use the search context menu to substitute the appropriate entity.
         </div>
         <img src="../assets/projects/zzapp/9.png" alt="Nicolay Apraksin / Zzapp / Question creation">
         <div class="text">
-          И конечно же мы следим за игроками!
+          And of course, we watch for the players!
           <br>
-          Каждая ваша игра записана — все ответы, потраченное время, стратегия поведения.
+          Every game you play is recorded: all the answers, the time spent, the strategy of behavior.
           <br>
-          На основе этих данных мы хотели сочинить инфорграфику показывающую познания игроков в тематиках Dota 2.
+          Based on this data, we wanted to create an infographic showing players' knowledge of Dota 2 topics.
         </div>
         <img src="../assets/projects/zzapp/8.png" alt="Nicolay Apraksin / Zzapp / Game history">
       </div>

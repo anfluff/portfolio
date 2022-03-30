@@ -108,6 +108,7 @@ a:hover {
   font-size: 1.5em;
   margin: 0 auto;
   width: 800px;
+  max-width: 90%;
 }
 .text.accent {
   color: var(--color-text-accent)
@@ -138,8 +139,13 @@ br {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .tags li {
+
+}
+.tags .tag {
   display: inline-block;
   border-radius: 100px;
   border: 2px solid var(--color-text);

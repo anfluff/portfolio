@@ -43,15 +43,15 @@ function setTab (value) {
         <div class="text accent">
           Custom production and business management system for fencing equipment factory.
           <br>
-          Продукт разработан под воркфлоу двух отделов компании:
+          The product was developed to improve a performance of two company departments:
           <ul>
-            <li>маркетингое — занесение новых заказов, описание требований и спецификаций, задачи;</li>
-            <li>производственное — план изготовления, ведение заказа в процессе изготовления, производственные лимиты, рассчет материалов.</li>
+            <li>Marketing. Entering new client orders, describing requirements and specifications. Communication with production department.</li>
+            <li>Production. Production plan, order maintenance in the manufacturing process, production limits, materials calculator calculation.</li>
           </ul>
-          Система позволила <b>оптимизировать работу маркетингово отдела</b>, сократить время от появления заказа до введения его в производства,
-          наладить взаимодействие между отделамичерез систему задач, дала статистическую информацию для долгосрочного планирования.
+          The system made it possible to <b>optimize the performance of the marketing department</b>: Reduced the time from the client's request to the implementation of the order.
+          Establish communication between departments through a system of tasks, gave statistical information for long-term planning.
           <br>
-          Разработка начиналась мной в одиночку, но с развитием я перешел на позицию <b>проджект менеджера</b>, делегировав всю работу нанятым разработчикам.
+          I've started the development alone, but through time I moved to the position of <b>project manager</b>, delegating all the work to hired developers.
         </div>
 
         <Technologies :technologies="technologies" />
@@ -61,79 +61,78 @@ function setTab (value) {
         class="tab"
       >
         <div class="text">
-          Интеграция системы на производство происходила по мере её разработки, так как она решала критически задачи производства.
+          The integration of the system into production took place as it was developed. It solved the critical issues of production.
           <br>
-          Перенос базы продуктов на платформу требовал большого количества времени менеджеров,
-          чтобы облегчить работу упор в визуальном решении был на юзабилити — акцент на контент и действия с ним, никаких дополнительных отвлекающих графических элементов.
+          Transferring the product base to the platform required a lot of time for managers,
+          to facilitate the work, the emphasis in the visual solution was on usability: content and actions on the first plan, no distracting graphic elements.
 
-          <h2>Заказы</h2>
-          Центральным компонентом системы является заказ, как основная единица бизнеса.
-          Для главы отдела продаж важно видеть количество совершенных заказов, этапы производства, объем выручки.
+          <h2>Orders</h2>
+          The central component of the system is the Order as the basic unit of business.
+          For the head of the sales department, it is important to see the number of completed orders, the production stages, and the amount of revenue.
         </div>
         <img src="../assets/projects/kvetun/0.png" alt="Nicolay Apraksin / Kvetun /  Orders table">
 
         <div class="text">
-          Сам заказ — довольно комплексная единица.
+          The Order itself is a rather complex unit.
           <br>
-          Бизнесс работает по всему миру, поэтому рассчет идет в разных валютах.
-          Заказ наполняется продуктами, продукты кастомизируются из модулей, к ним крепятся описания и требования к характеристикам.
+          Business spread all over the world, so the calculation is in different currencies.
+          The order is filled with products. Products are customized from modules, descriptions and requirements for characteristics are attached to them.
           <br>
-          Исходя из объема и сложности заказа определяются производственные рамки и условия доставки.
-          По каждому заказу генерируются инвойсы в соответствии с необходимостями почтывых служб.
+          Based on the complexity of the order, the production scopes are determined.
+          For each order, invoices are generated in accordance with the needs of postal services.
           <br>
-          Для избежания производственных ошибок все изменения заказов логгируются с возможностью просмотра изменений и возврата к прежним версиям.
+          To avoid production errors, all order changes are logged. You can allways view changes and return to previous state.
         </div>
         <img src="../assets/projects/kvetun/1.png" alt="Nicolay Apraksin / Kvetun / Order detail">
 
         <div class="text">
-          Для удобства работы с почтовыми службами сделана система распределения продукции заказа по коробкам для отправки.
+          Boxes management: distribute order product in boxes to make it easy with postal servises.
           <br>
-          Администратор может указать в каком количестве коробок какого веса будет отправляться заказ.
-          Каждая коробка снабжается персональной документацией для прохождения таможен.
+          The administrator can specify the amount and weight of the boxes.
+          Each box is supplied with documentation for postal and customs servises.
         </div>
         <img src="../assets/projects/kvetun/2.png" alt="Nicolay Apraksin / Kvetun / Boxes system">
 
         <div class="text">
-          Система снабжена платежным сервисом.
-          Менеджер сформировав заказ может выслать клиенту ссылку на оплату.
+          Payment system is included.
+          After the order is formed, the manager can send a link for payment to the client.
         </div>
         <img src="../assets/projects/kvetun/3.png" alt="Nicolay Apraksin / Kvetun / Payment page">
 
         <div class="text">
-          <h2>Продукты</h2>
-          Кветунь занимается изготовлением и реализацией широкого спектра фехтовального инвентаря:
-          фехтовальные снаряды, защитное снаряжение, экипировка.
+          <h2>Products</h2>
+          Kvetun manufacture and sale a wide range of fencing equipment: fencing weapons, protective gear, equipment.
           <br>
-          Каждое изделие поддается кастомизации по требованию заказчика: разрамер, материал, цвет.
-          Для решения задачи была сделана <b>система по кастомизации продукции</b>.
+          Each product can be customized according to the customer's requirements: size, material, color. So there are millions of combinations.
+          To solve the accounting problem we developed <b>product customization system</b>.
           <br>
-          Каждый кастомизируемый элемент заносится в базу с указанием возможных вариаций:
+          Each customizable element holds list of possible variations:
         </div>
         <img src="../assets/projects/kvetun/4.png" alt="Nicolay Apraksin / Kvetun / Product module creation">
         <div class="text">
-          У каждого продукта выбирается <b>список изменяемых модулей</b>. На изображении ниже указаны модули для сабли.
+          Products are formed with <b>list of modifiable modules</b>. The image below shows the modules for the saber.
         </div>
         <img src="../assets/projects/kvetun/5.png" alt="Nicolay Apraksin / Kvetun / Product modules set">
         <div class="text">
-          Менеджер при формировании заказа может указывает требования клиента к кастомизации изделий.
+          Manager indicates the client's requirements for product customization.
         </div>
         <img src="../assets/projects/kvetun/6.png" alt="Nicolay Apraksin / Kvetun / Product in order customisation">
 
         <div class="text">
-          <h2>Сводная таблица для производства</h2>
-          Данный интерфейс показывает производственный план на месяц.
-          Здесь собраны и организованы по типам все изделения которые необходимо изготовить, подсчитан расходы материалов.
-          По этим данным формируется PDF документ с расстановкой задач производственным отделам.
+          <h2>Production summary table</h2>
+          This interface shows the production plan for the month.
+          All products that need to be manufactured are collected and organized by type, the cost of materials is calculated.
+          Based on these data, a PDF document is formed with the assignment of tasks to production departments.
         </div>
         <img src="../assets/projects/kvetun/8.png" alt="Nicolay Apraksin / Kvetun / Summary">
 
         <div class="text">
-          <h2>Система задач</h2>
-          Взаимодействие внутри системы между сотрудниками происходит через систему задач.
-          Она соответсвует по функционалу общепритяным таск трекерам, но заточена под контректную область деятельности.
+          <h2>Task system</h2>
+          Communication within the system between employees occurs through a tasks manager.
+          In terms of functionality, it corresponds to common task trackers, but it is tailored for a specific area of activity.
           <br>
-          Как пример — задача может касаться заказа, нескольких заказов или же конкретных продуктов в заказе.
-          Из интерефейса заказа менеджер может пометить проблемные продукты, задачи будут выставлены соотвествующему производственному отделу.
+          As an example, a task can be connected to an order, multiple orders, or specific products in an order.
+          From the order page, the manager can mark the problematic products, the tasks will be assigned to the appropriate production department.
         </div>
         <img src="../assets/projects/kvetun/9.png" alt="Nicolay Apraksin / Kvetun / Task labels">
         <img src="../assets/projects/kvetun/10.png" alt="Nicolay Apraksin / Kvetun / Task detail">

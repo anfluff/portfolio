@@ -19,7 +19,9 @@ defineProps({
           v-for="(tag, index) in tech"
           :key="index"
         >
-          {{ tag }}
+          <div class="tag">
+            {{ tag }}
+          </div>
         </li>
       </ul>
     </div>
@@ -41,12 +43,13 @@ defineProps({
   border-bottom: 1px solid var(--color-border);
 }
 .technology .label {
-  flex: 0 0 200px;
+  flex: 0 1 30%;
+  max-width: 200px;
   font-size: 1.5em;
   text-transform: capitalize;
 }
 .technology .tags {
-  flex-shrink: 0;
+  flex: 1 0 70%;
 }
 
 @media screen and (max-width: 768px) {

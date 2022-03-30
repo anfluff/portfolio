@@ -6,17 +6,10 @@ import Lifetime from '../components/Lifetime.vue'
   <div class="about">
     <div class="columns">
       <div>
-        <div class="label">Here is me</div>
         <div class="image">
           <img
-            src="../assets/myself/small.jpg"
+            src="../assets/myself/new.jpg"
             alt="Nicolay Apraksin, myself"
-            class="small"
-          >
-          <img
-            src="../assets/myself/big.jpg"
-            alt="Nicolay Apraksin, myself"
-            class="big"
           >
         </div>
       </div>
@@ -74,7 +67,10 @@ import Lifetime from '../components/Lifetime.vue'
 .columns {
   display: flex;
   justify-content: space-around;
-  padding: 0 10vw;
+  padding: 0 20vw;
+}
+.columns > div {
+  flex: 0 0 50%;
 }
 .label {
   margin-bottom: .5em;
@@ -82,30 +78,13 @@ import Lifetime from '../components/Lifetime.vue'
 }
 
 .image {
-  position: relative;
   display: inline-block;
-  width: 350px;
-  height: 350px;
+  max-width: 500px;
 }
-.image .small {
-  position: absolute;
-  left: 0;
-  top: 0;
+.image img {
+  width: 100%;
   border-radius: var(--border-radius);
   overflow: hidden;
-}
-.image .big {
-  position: absolute;
-  z-index: 2;
-  left: -296px;
-  top: -177px;
-  display: none;
-  pointer-events: none;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-}
-.image:hover .big {
-  display: block;
 }
 
 @media screen and (max-width: 767px) {

@@ -57,25 +57,25 @@ function setTab (value) {
         class="tab"
       >
         <div class="text accent">
-          AlteraInvest — брокерское агенство занимающееся продажей готовых бизнесов и франшиз.
-          Основной IT продукт — маркетплейс для объявлий о покупке-продаже.
+          AlteraInvest is a brokerage agency selling ready-made businesses and franchises.
+          The main IT product is a business selling marketplace.
           <br>
-          За время работы в компании я выполнил 3 основных больших проекта.
+          During my time at the company, I completed 3 major large projects.
 
           <ul>
-            <li><b>Altbroker</b> — проектирование UX и отрисовка UI для внутренней системы брокерского агентства.</li>
-            <li><b>IOS app design</b> для клиентского функционала агенства.</li>
-            <li><b>Mobile web</b> Разработка дизайна мобильной версии для сайд проекта компании в той же области.</li>
+            <li><b>Altbroker</b>: UX design and UI development for the brokerage agency's internal ERP system.</li>
+            <li><b>IOS app design</b> for the businesses marketplace.</li>
+            <li><b>Mobile web</b> for a side project of a company in the same area.</li>
           </ul>
 
-          В мои сферы ответственности входило:
+          My areas of responsibility included:
           <ul>
-            <li>Сбор требований к продукту от руководства</li>
-            <li>Проведение UX исследований, интервьирование сотрудников для понимания предметной области и проблем</li>
-            <li>UX проектирование интерфейсов</li>
-            <li>Прототипирование и проведение исследований, выполняет ли интерфейс поставленные задачи</li>
-            <li>Разработка дизайн системы</li>
-            <li>сборка интефрейсов по разработанным UX структурам из элементов дизайн системы.</li>
+            <li>Collecting product requirements from management</li>
+            <li>Conducting UX research, interviewing employees to understand the subject area and their problems</li>
+            <li>UX interface design</li>
+            <li>Prototyping</li>
+            <li>Design system development</li>
+            <li>Building interfaces of design system elements.</li>
           </ul>
         </div>
 
@@ -158,39 +158,38 @@ function setTab (value) {
         class="tab"
       >
         <div class="text">
-          IOS приложение для маркетплейса компании.
+          IOS application for the company's marketplace.
           <br>
-          Главная задача — поиск пользователями объявлений и первое общение с брокерами.
+          The main app goal is to provide client an easy way to search for desired business.
           <br>
-          Начальный экран позволят быстро перейти к поиску, прошлой активности внутри приложения, либо более классическому выбору категории.
+          The home screen allows you to quickly navigate to search, past in-app activity, or category selection.
           <br>
-          Основным интерфейсом является список товаров. Здесь представлены полхоящие под поиск объявления с самой значимой информацией.
-          Таблица предлагает взаимодействие tinder-like — отметайте свайпами не интересущие вас объекта и добавляйте в избранное те что вам приглянулись.
+          The most important interface is a list of products.
+          The table offers tinder-like interaction - swipe away the objects you are not interested in and add to your favorites those that you like.
           <br>
-          Детальная карточка объявления предоставляет в наглядном виде все важные показатели бизнеса, а также предлагает сразу же связаться с брокером для выяснения дальнейших деталей.
+          The detailed page of business provides a visual overview of all important financial indicators, and offers to contact the broker for further details.
         </div>
         <img src="../assets/projects/altera/altera-ios/1.png" alt="Nicolay Apraksin / Altera IOS App / Index, Business list, Business detail">
         <div class="text">
-          Вторым по значимости интерфейсом является фильтр.
+          Another important interface is the filter.
           <br>
-          Бизнесы обладают большим количеством параметров важных покупателю при выборе.
+          Businesses have a large amount of details important to the buyer when choosing.
           <br>
-          Пресеты фильтров можно сохранять и подписываться на уведомления по появлению новых объявлений.
-          Пользователю дается возможность быстро перейти на последние фильтры для возврата к прошлой активности.
+          Filter presets can be saved for further usage. Also you can subscribe to filters to get notifications when suitable business appear.
         </div>
         <img src="../assets/projects/altera/altera-ios/2.png" alt="Nicolay Apraksin / Altera IOS App / Filters system">
         <div class="text">
-          Избранное. Выбранные объявления попадают сюда из списка бизнесов. Здесь также поддерживается свайп для удаления.
+          Favorites. All businesses liked by the client stores here
           <br>
-          Как сравнить несколько выбранных объектов? Для этого сделан подробный интерфейс сравнения — объекты сравниваются попарно с сведением данных по категориям.
+          But how to compare business? For this purpose, a detailed comparison interface has been made: businesses are compared in pairs with data summarized by categories.
         </div>
         <img src="../assets/projects/altera/altera-ios/3.png" alt="Nicolay Apraksin / Altera IOS App / Favourite and Compare">
         <div class="text">
-          По понравившимся объектам клиент связывается с брокером.
+          Contacting the broker directly is another way of getting infromation.
           <br>
-          Все звонки мы собираем вместе для удосбтва повторного контакта, предлагаем сразу связаться с брокерами объектов из избранного.
+          All calls made are stored: its easy to recall some one than search for their contacts. Also interface displays contact information of brokers held your favourite busenesess.
           <br>
-          После взаимодейсвтия с брокером клиенту предлагается оставить отзыв о нем, что повышает качество оказания услуг.
+          After interacting with the broker, the client is invited to leave a review, which improves the quality of services.
         </div>
         <img src="../assets/projects/altera/altera-ios/4.png" alt="Nicolay Apraksin / Altera IOS App / Communication with Brokers">
       </div>
@@ -199,22 +198,22 @@ function setTab (value) {
         class="tab"
       >
         <div class="text">
-          Сайд проект Alterainvest, направленный на продажу готового бизнеса определенных категорий, ebay для бизнессов.
-          Здесь клиенты самолично размещают объекты, поднимают их в выдаче, взаимодействуют друг с другом.
+          Alterainvest side project called Findesk, aimed at selling ready-made businesses of certain categories, ebay for businesses.
+          Here, clients personally place objects, raise them in the search results, and interact with each other.
           <br>
-          Каталог объявлений, богатые система фильтров.
+          List of products, rich filter system.
         </div>
         <img src="../assets/projects/altera/findesk/1.png" alt="Nicolay Apraksin / Findesk Mobile / Index, Business list, Filters">
         <div class="text">
-          Детальная карточка товара с подробной информацией, галерея изображений, избранное.
+          Detailed product card with detailed information, image gallery, favorites.
         </div>
         <img src="../assets/projects/altera/findesk/2.png" alt="Nicolay Apraksin / Findesk Mobile / Business detail, Favourite">
         <div class="text">
-          Богатый интерфейс для сравнения добавленных в избранное бизнесов. Попарное сравнение по сходным категориям информации.
+          Rich interface for comparing products added to your favorites. Pairwise comparison for similar categories of information.
         </div>
         <img src="../assets/projects/altera/findesk/3.png" alt="Nicolay Apraksin / Findesk Mobile / Business comparison">
         <div class="text">
-          Логин, регистрация, экраны конечных состояний.
+          Login, registration, final state screens.
         </div>
         <img src="../assets/projects/altera/findesk/4.png" alt="Nicolay Apraksin / Findesk Mobile / Authentication">
       </div>

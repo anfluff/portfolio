@@ -218,7 +218,7 @@ function setTab (value) {
               The user part is fully responsive for mobile devices, since 70% of users prefer surfing on the go.
             </li>
             <li>
-              <b>Приложение</b> для операторов площадок на <b>electron + vue2</b>.
+              <b>App</b> for ring operators is built on <b>electron + vue2</b>.
             </li>
           </ol>
         </div>

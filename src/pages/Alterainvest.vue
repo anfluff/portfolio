@@ -86,69 +86,71 @@ function setTab (value) {
         class="tab"
       >
         <div class="text">
-          Система управления внешним маркетплейсом, ведение сделок, внутренняя бухгалтерия.
-          Интерфейс решает задачи нескольких категорий пользователей:
+          Marketplace management system, deals management, internal accounting.
+          The interface solves the problems of several categories of users:
           <ul>
-            <li>брокеров — ведение объектов и сделок</li>
-            <li>менеджеров — наполнение объектов контентом</li>
-            <li>франчайзи — упраление франшизными объявлениями</li>
-            <li>бухгалтерии — рассчет зарплат</li>
-            <li>владельцев бизнеса — просмотр общей статистики бизнеса.</li>
+            <li>Brokers: managing objects and deals</li>
+            <li>Managers: filling objects with content</li>
+            <li>Franchisee: manage franchise ads</li>
+            <li>Accounting: payroll</li>
+            <li>Business Owners: view overall business statistics.</li>
           </ul>
         </div>
         <img src="../assets/projects/altera/altbroker/1.png" alt="Nicolay Apraksin / Altbroker / Login">
 
         <div class="text">
-          Главным интерфейсм является таблица заказов брокеров.
-          Сложный многофункциональный поиск, редактирование важных значений на лету, элементы геймификации интерфейса для большего вовлечения брокера.
-          Возможность делиться объектами, предпросмотр для клиентов, быстрое заклчение сделки, управление публикацией на маркетплейсе.
+          The main interface is the list of brokers businesses.
+          Sophisticated multifunctional search, editing important values on the fly, gamification interface elements for greater broker involvement.
+          Ability to share objects, preview for clients, quick deals creation, management of publication on the marketplace.
           <br>
-          Зарплата брокера — процент с суммы сделки. Поэтому важно сделать интерфейсы максимально удобными, сопровождающим
-          и вариативным, ведь каждый бизнесс и сделка имеют больше количество особенностей.
+          The broker's salary based on percentage of the transaction amount.
+          Therefore, it is important to make the interfaces as convenient as possible for maintainers. and variable, because each business and deal has more features.
         </div>
         <img src="../assets/projects/altera/altbroker/2.png" alt="Nicolay Apraksin / Altbroker / Objects list">
 
         <div class="text">
-          Сложный фильтр с возможностями сохранения и последующего шэра сохраненных фильров.
+          A complex filter with the ability to save and then share filters.
         </div>
         <img src="../assets/projects/altera/altbroker/3.png" alt="Nicolay Apraksin / Altbroker / Filters">
 
         <div class="text">
-          Быстрый предпросмотр объекта, обсуждение объектов со своей командой и потенциальными клиентами.
+          Quick preview of the object, discussion of objects with your team and potential clients.
         </div>
         <img src="../assets/projects/altera/altbroker/4.png" alt="Nicolay Apraksin / Altbroker / Object preview">
 
         <div class="text">
-          Карточка одного бизнеса, с подсками направляющими действия брокера. Чем больше заполнено информации, тем выше его объект в маркетплейсе.
+          Detail card of a business, with prompts guiding the actions of the broker.
+          The more information is filled in, the higher its object in the marketplace.
         </div>
         <img src="../assets/projects/altera/altbroker/5.png" alt="Nicolay Apraksin / Altbroker / Object detail">
 
         <div class="text">
-          Расширенный поиск, позвляющий брокерам внутри системы искать сходные бизнесы, сделки, франшизы.
+          Advanced search interface allows brokers within the system to search for similar businesses, deals, franchises.
         </div>
         <img src="../assets/projects/altera/altbroker/6.png" alt="Nicolay Apraksin / Altbroker / Search">
 
         <div class="text">
-          <h2>Сделки</h2>
-          Сделка — длительный процесс заключения соглашения между продавцом и покупателем.
+          <h2>Deals</h2>
+          A deal is a long process of concluding an agreement between a seller and a buyer.
         </div>
         <img src="../assets/projects/altera/altbroker/8.png" alt="Nicolay Apraksin / Altbroker / Deal">
         <div class="text">
-          Сделка проходит поэтапно, на кажодм этапе система подсказывает брокерку какой набор действий сейчас необходимо совершить:
-          какие документы загрузить, какую информацию передать какой стороне, какиих специалистов нужно подключить к процессу.
+          The deal consist of many consecutive stages.
+          Each one tells the broker what set of actions now needs to be performed:
+          what documents to upload, what information to transfer to which party, what specialists need to be involved in the process.
         </div>
         <img src="../assets/projects/altera/altbroker/9.png" alt="Nicolay Apraksin / Altbroker / Deal progress">
         <div class="text">
-          Имеет в себе множество интерфейсов заполнения данных.
+          Tons of data editing interfaces.
         </div>
         <img src="../assets/projects/altera/altbroker/10.png" alt="Nicolay Apraksin / Altbroker / Deal info">
         <div class="text">
-          Все приложенные к сделке документы аггригируются для быстрого доступа к ним.
+          All documents attached to the Deal are aggregated for quick access to them.
         </div>
         <img src="../assets/projects/altera/altbroker/11.png" alt="Nicolay Apraksin / Altbroker / Deal documents">
         <div class="text">
-          <h2>Профиль брокера</h2>
-          Брокер — лицо компании, видимое для клиентов, поэтому качественно заполнение профиля крайне важно.
+          <h2>Broker Profile</h2>
+          The broker is the face of the company, visible to customers, so filling out the profile in a quality manner is extremely important.
         </div>
         <img src="../assets/projects/altera/altbroker/12.png" alt="Nicolay Apraksin / Altbroker / Broker profile">
         <img src="../assets/projects/altera/altbroker/13.png" alt="Nicolay Apraksin / Altbroker / Border profile edit">

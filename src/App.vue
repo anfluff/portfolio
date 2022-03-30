@@ -142,19 +142,16 @@ br {
   display: flex;
   flex-wrap: wrap;
 }
-.tags li {
-
-}
 .tags .tag {
   display: inline-block;
   border-radius: 100px;
   border: 2px solid var(--color-text);
   padding: 4px 12px;
   font-weight: bold;
+  margin-bottom: 8px;
 }
 .tags li:not(:last-of-type) {
   margin-right: 8px;
-  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 768px) {

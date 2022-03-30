@@ -16,7 +16,7 @@ import Lifetime from '../components/Lifetime.vue'
       <div>
         <div>
           <div class="label">Here is my CV</div>
-          <a href="/cv.pdf" download>Click to download↓</a>
+          <a href="/CV.pdf" download>Click to download↓</a>
         </div>
 
         <div style="margin-top: 3em">
@@ -96,9 +96,6 @@ import Lifetime from '../components/Lifetime.vue'
   }
   .columns > div:last-of-type {
     margin-top: 2em;
-  }
-  .image:hover .big {
-    display: none;
   }
   .about > div:first-of-type {
     margin-top: 1em;

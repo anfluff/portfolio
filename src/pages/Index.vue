@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import Intro from '../components/Intro.vue'
 import ProjectTile from '../components/ProjectTile.vue'
+import Technologies from '../components/Technologies.vue'
 
 import hemagonImg from '../assets/projects/hemagon/hemagon-preview.svg'
 import lsmpImg from '../assets/projects/lsmp/lsmp-preview.svg'
@@ -58,13 +59,31 @@ const petProjects = ref([
     tags: [ 'concept', 'product design', 'frontend', 'lead' ]
   }
 ])
+
+const technologies = ref({
+  'Industry knowledge': [
+    'Product Design', 'Prototyping', 'UX', 'UI',
+    'Frontend', 'Backend', 'DB',
+    'Team Management'
+  ],
+  design: [ 'Figma', 'Sketch', 'Framer', 'Invision', 'Photoshop', 'Illustrator' ],
+  code: [
+    'JavaScript', 'TypeScript',
+    'Vue', 'Nuxt', 'Node', 'Express', 'Npm', 'Webpack', 'Vite', 'Electron', 'SSR',
+    'MongoDB', 'Mongoose',
+    'CSS', 'PostCSS', 'Less', 'Sass',
+    'Angular',
+    'PHP', 'MySQL'
+  ],
+  environment: [ 'Bitbucket', 'git', 'Docker', 'Gitlab', 'Windows', 'Mac', 'Terminal' ]
+})
 </script>
 
 <template>
   <Intro />
 
   <div class="projects-label">
-    My latest projects
+    Latest projects
   </div>
   <div
     id="projects"
@@ -82,7 +101,7 @@ const petProjects = ref([
   </div>
 
   <div class="projects-label">
-    Also my elder pet projects
+    Elder pet projects
   </div>
   <div
     id="pet-projects"
@@ -99,6 +118,13 @@ const petProjects = ref([
       :no-padding="project.noPadding"
     />
   </div>
+
+  <div class="projects-label">
+    Tech tags
+  </div>
+  <div class="page-container">
+    <Technologies :technologies="technologies" />
+  </div>
 </template>
 
 <style scoped>
@@ -112,6 +138,11 @@ const petProjects = ref([
 .projects-label {
   text-align: center;
   font-size: 2em;
+}
+
+.technologies {
+  margin-top: 2em;
+  margin-bottom: 4em;
 }
 
 @media screen and (max-width: 767px) {

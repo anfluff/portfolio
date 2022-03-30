@@ -10,8 +10,10 @@
     <div class="description">
       Highly motivated IT enthusiast 👹.
       <br>
+      Fullstack Developer, Product Designer, Team Lead.
+      <br>
       I strive to transform data-swamps overflowing with processes 💀 into understandable and convenient structures and interfaces 💫.
-      Product development is my main goal. Delivering nessesary functionality to the client is on top of everything.
+      Product development is my main goal. Delivering necessary functionality to the client is on top of everything.
       <br>
       Most focused on
       <div class="popover-container">
@@ -70,7 +72,7 @@
       </div>.
       <br>
       If the team has no leader, I can be the one: 10+ years of experience granted me the knowledge of all the interprofession languages 🧑‍🌾 and how product should be done.
-      During my practice, I managed teams up to five developers.
+      During my practice, I managed teams of up to five developers.
       <br>
       Currently based in Saint-Petersburg Russia.
       <br>
@@ -104,6 +106,7 @@ h1 {
 .description {
   margin: 3em 0;
   width: 1000px;
+  max-width: 90%;
 }
 
 .popover-container {
